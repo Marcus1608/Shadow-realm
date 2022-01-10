@@ -13,8 +13,8 @@ function App() {
     <div>
       <AnimatePresence onExitComplete>
         <Switch location={location} key={location.key}>
-          <Route path="/" exact component={LoadingPage} />
-          <Route path="/landing" component={LandingPage} />
+          <Route path="/shadow-realm" exact component={LoadingPage} />
+          <Route path="/shadow-realm/landing" component={LandingPage} />
         </Switch>
       </AnimatePresence>
     </div>
