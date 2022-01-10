@@ -1,0 +1,695 @@
+$primary-red: #ff4142;
+$primary-black: #212121;
+
+// cursor
+.cursor {
+  pointer-events: none;
+
+  &-ball {
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+  }
+}
+
+circle {
+  stroke-width: 2px;
+  stroke: white;
+  fill: none;
+}
+
+// scroll to button
+.backToTop-btn {
+  position: fixed;
+  right: 10px;
+  bottom: 2vh;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 1px solid white;
+  background: transparent;
+  cursor: pointer;
+  z-index: 999;
+
+  .fa-arrow-up {
+    font-size: 18px;
+    color: white;
+  }
+
+  &--hidden {
+    visibility: hidden;
+  }
+}
+
+// wrapper
+.landing-wrapper {
+  position: relative;
+  height: 650vh;
+  width: 100vw;
+}
+
+// section One
+.section-one--container {
+  position: relative;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+
+  // navbar
+  .navbar {
+    position: relative;
+    top: 5%;
+    height: 30vh;
+    width: 85vw;
+
+    h1 {
+      position: relative;
+      left: 5px;
+      font-size: 40px;
+      text-transform: uppercase;
+      width: 150px;
+
+      &:nth-child(2) {
+        position: relative;
+        left: 5%;
+        bottom: 8px;
+      }
+    }
+
+    ul {
+      position: relative;
+      left: 80px;
+      top: 10px;
+
+      li {
+        width: 100px;
+        margin: 8px 0;
+        font-size: 17px;
+        transition: 400ms all ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          color: $primary-red;
+        }
+      }
+    }
+  }
+
+  // content
+  &__content,
+  .sectionOne-content {
+    position: absolute;
+    top: 30%;
+    height: 84vh;
+    width: 85vw;
+
+    &--introduction {
+      position: absolute;
+      left: 0;
+      width: 30%;
+      height: 100%;
+
+      h1 {
+        position: relative;
+        top: 30%;
+        left: 10px;
+        padding-bottom: 15px;
+        border-bottom: 3px solid $primary-red;
+        font-size: 25px;
+        width: 270px;
+      }
+
+      p {
+        width: 600px;
+        position: relative;
+        top: 40%;
+        left: 10px;
+        font-size: 25px;
+      }
+
+      //   project button
+      .projects-btn {
+        position: relative;
+        left: 10px;
+        top: 50%;
+
+        span {
+          color: $primary-red;
+        }
+
+        &:hover {
+          animation: pulse 1s linear infinite alternate;
+
+          @keyframes pulse {
+            0% {
+              transform: scale(1);
+            }
+            100% {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+
+    // section 1 image
+    &--image {
+      position: absolute;
+      left: 30%;
+      width: 40%;
+      height: 100%;
+
+      img {
+        position: relative;
+        left: 80px;
+        bottom: 400px;
+        height: 170%;
+        width: 140%;
+
+        animation: bounce 3s linear infinite alternate;
+
+        @keyframes bounce {
+          0% {
+            transform: translateY(0);
+          }
+
+          100% {
+            transform: translateY(40px);
+          }
+        }
+      }
+    }
+
+    // section 1 title
+    &--Title-webStudio {
+      position: absolute;
+      right: 0;
+      width: 30%;
+      height: 100%;
+
+      p {
+        position: relative;
+        top: 30%;
+        left: 0;
+        transform: rotate(-90deg);
+        font-size: 200px;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        transition: 350ms all ease-in-out;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// section two
+.section-two--container {
+  position: relative;
+  height: 150vh;
+  background: $primary-red;
+  display: flex;
+  justify-content: center;
+
+  &__content,
+  .sectionTwo-content {
+    position: absolute;
+    top: 5%;
+    width: 85vw;
+    height: 140vh;
+
+    &--services {
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 34%;
+
+      ul {
+        position: relative;
+        left: 10px;
+        top: 5%;
+
+        li {
+          position: relative;
+          margin-bottom: 100px;
+
+          h1 {
+            text-transform: uppercase;
+          }
+
+          p {
+            position: relative;
+            top: 10px;
+            font-size: 20px;
+          }
+        }
+      }
+
+      //  contact button
+      .contact-btn {
+        position: relative;
+        left: 10px;
+        top: 100px;
+
+        span {
+          color: $primary-black;
+        }
+
+        &:hover {
+          animation: pulse 1s linear infinite alternate;
+
+          @keyframes pulse {
+            0% {
+              transform: scale(1);
+              border: 1px solid white;
+            }
+            100% {
+              transform: scale(1.05);
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+
+    // section 2 image
+    &--image {
+      position: absolute;
+      left: 34%;
+      width: 36%;
+      height: 100%;
+
+      img {
+        position: relative;
+        left: 20%;
+
+        animation: bounce 3s linear infinite alternate;
+
+        @keyframes bounce {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(40px);
+          }
+        }
+      }
+    }
+
+    // section 2 title
+    &--titleServices {
+      position: absolute;
+      right: 0;
+      width: 30%;
+      height: 100%;
+
+      p {
+        position: relative;
+        top: 50%;
+        transform: rotate(-90deg);
+        font-size: 200px;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        transition: 350ms all ease-in-out;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// section three
+.section-three--container {
+  position: relative;
+  height: 150vh;
+  background: #212121;
+  display: flex;
+  justify-content: center;
+
+  &__content,
+  .sectionThree-content {
+    position: absolute;
+    top: 5%;
+    width: 85vw;
+    height: 140vh;
+
+    &--about {
+      position: absolute;
+      left: 0;
+      width: 30%;
+      height: 100%;
+
+      h1 {
+        position: absolute;
+        top: 25%;
+        left: 10px;
+        text-transform: uppercase;
+      }
+
+      p {
+        position: absolute;
+        top: 30%;
+        left: 10px;
+        font-size: 20px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 140%;
+          border-bottom: 3px solid $primary-red;
+          width: 80%;
+        }
+      }
+
+      h2 {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+
+        text-transform: uppercase;
+      }
+
+      ul {
+        position: relative;
+        top: 55%;
+        width: 95%;
+        left: 20px;
+
+        li {
+          width: 100%;
+          font-size: 18px;
+          margin: 8px 0;
+
+          span {
+            width: 60%;
+            text-align: left;
+            position: absolute;
+            right: 0;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+    //section 3 image
+    &--image {
+      position: absolute;
+      left: 30%;
+      width: 40%;
+      height: 100%;
+
+      img {
+        position: relative;
+        left: 20%;
+        height: 80%;
+        top: 10%;
+
+        animation: bounce 3s linear infinite alternate;
+
+        @keyframes bounce {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(40px);
+          }
+        }
+      }
+    }
+
+    // section 3 title
+    &--titleAbout {
+      position: absolute;
+      right: 0;
+      width: 30%;
+      height: 100%;
+
+      p {
+        position: relative;
+        top: 40%;
+        transform: rotate(-90deg);
+        font-size: 200px;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        transition: 350ms all ease-in-out;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// section four
+.section-four--container {
+  position: relative;
+  height: 150vh;
+  background: $primary-red;
+  display: flex;
+  justify-content: center;
+
+  &__content,
+  .sectionFour-content {
+    position: absolute;
+    top: 5%;
+    width: 85vw;
+    height: 140vh;
+
+    &--projects {
+      position: absolute;
+      left: 0;
+      width: 50%;
+      height: 100%;
+
+      ul {
+        position: absolute;
+        left: 10px;
+        top: 10%;
+        width: 100%;
+
+        li {
+          position: relative;
+          border: 1px solid $primary-black;
+          background: $primary-black;
+          height: 270px;
+          width: 650px;
+          transition: 0.5s all ease-in-out;
+
+          &:hover {
+            transform: rotateX(15deg);
+            box-shadow: 0 15px 20px -10px rgb(0, 0, 0);
+          }
+        }
+
+        li:nth-child(2) {
+          position: relative;
+          top: 50px;
+          left: 50px;
+        }
+
+        li:nth-child(3) {
+          position: relative;
+          top: 100px;
+          left: 100px;
+        }
+      }
+
+      .viewMore-btn {
+        position: absolute;
+        bottom: 50px;
+        left: 10px;
+
+        span {
+          color: $primary-black;
+        }
+
+        &:hover {
+          animation: pulse 1s linear infinite alternate;
+
+          @keyframes pulse {
+            0% {
+              transform: scale(1);
+              border: 1px solid white;
+            }
+            100% {
+              transform: scale(1.05);
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+
+    // section 4 image
+    &--image {
+      position: absolute;
+      right: 0;
+      width: 50%;
+      height: 100%;
+
+      img {
+        height: 80%;
+
+        animation: bounce 3s linear infinite alternate;
+
+        @keyframes bounce {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(40px);
+          }
+        }
+      }
+    }
+
+    // section 4 title
+    &--titleProjects {
+      position: absolute;
+      right: 0;
+      width: 30%;
+      height: 100%;
+
+      p {
+        position: relative;
+        top: 50%;
+        transform: rotate(-90deg);
+        font-size: 200px;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        transition: 350ms all ease-in-out;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// footer section
+.section-five--container {
+  position: relative;
+  height: 50vh;
+  background: $primary-black;
+  display: flex;
+  justify-content: center;
+
+  &__content,
+  .sectionFive-content {
+    position: absolute;
+    top: 5%;
+    width: 85vw;
+    height: 45vh;
+
+    // legal
+    &--legal {
+      position: absolute;
+      height: 100%;
+      left: 0;
+      width: 40%;
+
+      h2 {
+        position: relative;
+        top: 20%;
+        left: 10px;
+      }
+
+      .legal-p--1 {
+        position: relative;
+        top: 25%;
+        left: 10px;
+      }
+
+      .legal-p--2 {
+        position: relative;
+        top: 40%;
+        left: 10px;
+      }
+
+      a {
+        position: relative;
+        top: 30%;
+        left: 10px;
+        transition: 300ms all ease-in-out;
+
+        &:hover {
+          color: $primary-red;
+        }
+      }
+    }
+
+    // office
+    &--office {
+      position: absolute;
+      height: 100%;
+      left: 40%;
+      width: 30%;
+
+      h2 {
+        position: relative;
+        top: 20%;
+      }
+
+      ul {
+        position: relative;
+        top: 25%;
+
+        li {
+          margin: 8px 0;
+          font-size: 18px;
+        }
+      }
+    }
+
+    // socials
+    &--socials {
+      position: absolute;
+      height: 100%;
+      right: 0;
+      width: 30%;
+
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        position: relative;
+        top: 20%;
+      }
+
+      ul {
+        position: relative;
+        top: 30%;
+
+        li {
+          display: flex;
+          flex-direction: column;
+
+          a {
+            margin: 8px 0;
+            transition: 300ms all ease-in-out;
+
+            &:hover {
+              color: $primary-red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
