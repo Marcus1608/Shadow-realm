@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Shadow-realm/static/css/main.da62b973.chunk.css",
-    "main.js": "/Shadow-realm/static/js/main.8f10c22f.chunk.js",
-    "main.js.map": "/Shadow-realm/static/js/main.8f10c22f.chunk.js.map",
+    "main.js": "/Shadow-realm/static/js/main.dc72228e.chunk.js",
+    "main.js.map": "/Shadow-realm/static/js/main.dc72228e.chunk.js.map",
     "runtime-main.js": "/Shadow-realm/static/js/runtime-main.e1c65884.js",
     "runtime-main.js.map": "/Shadow-realm/static/js/runtime-main.e1c65884.js.map",
     "static/js/2.dfd5dfe0.chunk.js": "/Shadow-realm/static/js/2.dfd5dfe0.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e1c65884.js",
     "static/js/2.dfd5dfe0.chunk.js",
     "static/css/main.da62b973.chunk.css",
-    "static/js/main.8f10c22f.chunk.js"
+    "static/js/main.dc72228e.chunk.js"
   ]
 }
