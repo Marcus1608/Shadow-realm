@@ -1,16 +1,16 @@
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
 import './LoadingPage.scss';
 import { motion } from 'framer-motion';
 
 export const LoadingPage = () => {
-  useEffect(() => {
-    let timeout = setTimeout(() => {
-      window.location.replace('/landing');
-    }, 2000);
-    return () => {
-      clearTimeout(timeout);
-    };
-  }, []);
+  // useEffect(() => {
+  //   let timeout = setTimeout(() => {
+  //     window.location.replace('/landing');
+  //   }, 2000);
+  //   return () => {
+  //     clearTimeout(timeout);
+  //   };
+  // }, []);
 
   const textVariant = {
     top: {
